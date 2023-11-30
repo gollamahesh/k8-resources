@@ -9,4 +9,4 @@ spec:
       ports:
       - containerPort: 80
     - name: demo-linux
-      image: alma-linux:8
+      image: almalinux:8
