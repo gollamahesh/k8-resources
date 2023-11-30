@@ -8,5 +8,7 @@ spec:
       image: nginx
       ports:
       - containerPort: 80
-    - name: demo-linux
-      image: almalinux:8
+    - name: demo
+      image: nginx
+      ports:
+      - containerPort: 8080
