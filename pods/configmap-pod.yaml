@@ -10,7 +10,7 @@ spec:
   - name: configmap
     image: nginx
     env:
-    - name: names
+    - name: name
       valueFrom:
         configMapKeyRef:
           name: course-config
@@ -20,7 +20,7 @@ spec:
         configMapKeyRef:
           name: course-config
           key: father-name
-    - name: country-name
+    - name: country
       valueFrom:
         configMapKeyRef:
           name: course-config
