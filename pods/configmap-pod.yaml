@@ -11,17 +11,17 @@ spec:
     image: nginx
     env:
     - name: names
-      valuesFrom:
+      valueFrom:
         configMapKeyRef:
           name: course-config
           key: name
     - name: father
-      valuesFrom:
+      valueFrom:
         configMapKeyRef:
           name: course-config
           key: father-name
     - name: country-name
-      valuesFrom:
+      valueFrom:
         configMapKeyRef:
           name: course-config
           key: country
