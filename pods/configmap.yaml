@@ -3,6 +3,6 @@ kind: ConfigMap
 metadata:
   name: course-config
 data:
-  name: mahesh
-  father-name: hari
+  name: GollaMaheshBabu
+  father-name: GollaHariBabu
   country: india
