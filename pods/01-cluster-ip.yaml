@@ -14,10 +14,17 @@ spec:
       - containerPort: 80
         name: nginx-web-svc
 
-# ---
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   name: nginx-service
-# spec:
-#   selector:
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  selector:
+    environment: dev
+    app: web
+ports:
+- name: nginx-service
+  protocol: TCP
+  port: 80
+  targetPort: nginx-web-svc
