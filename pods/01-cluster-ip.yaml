@@ -2,6 +2,9 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: cluster-ip
+  labels:
+    environment: dev
+    app: web
   # namespace: roboshop
 spec:
   containers:
@@ -10,3 +13,11 @@ spec:
       ports:
       - containerPort: 80
         name: nginx-web-svc
+
+# ---
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: nginx-service
+# spec:
+#   selector:
