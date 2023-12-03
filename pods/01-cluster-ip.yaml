@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cluster-ip
+  # namespace: roboshop
+spec:
+  containers:
+    - name: cluster-ip
+      image: nginx:latest
+      ports:
+      - containerPort: 80
+        name: nginx-web-svc
