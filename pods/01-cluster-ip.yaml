@@ -23,8 +23,8 @@ spec:
   selector:
     environment: dev
     app: web
-ports:
-- name: nginx-service
-  protocol: TCP
-  port: 80
-  targetPort: nginx-web-svc
+  ports:
+  - name: nginx-service
+    protocol: TCP
+    port: 80
+    targetPort: nginx-web-svc
